@@ -7,7 +7,7 @@
         "dev": "npm run open-browser && next dev",
         "start:dev": "concurrently \" npm run dev\" \"npm run server\"",
         "build": "next build",
-        "build-api": "concurrently \"npm run server\" \"npm run build\"",
+        "build-api": "concurrently \"npm run build\" \"npm run server\"",
         "start": "next start",
         "lint": "next lint",
         "server": "json-server --watch ./json-server/db.json --port 8000"
